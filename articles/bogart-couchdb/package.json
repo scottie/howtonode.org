@@ -8,7 +8,7 @@
     "directories": { "lib": "./lib" },
     "dependencies": {
       "bogart": ">=0.2.0",
-      "mustache": "0.3.1-dev",
+      "mustache": "2.2.1",
       "couchdb": ">=0.1.2",
       "promised-io": "=0.2.3"
     }
