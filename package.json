@@ -15,13 +15,14 @@
     "stack": ">=0.0.3",
     "creationix": ">=0.1.2 <=0.3.1",
     "wheat": ">=0.2.0",
-    "cluster": ">=0.6.4"
+    "cluster": ">=0.6.4",
+    "@snyk/protect": "latest"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server/server.js"
-  }
-
+    "start": "node server/server.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
